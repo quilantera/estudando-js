@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela alunos</title>
+</head>
+<body>
+    <table class="tabela-alunos">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Nota</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tabela-alunos{
+            background-color: #ffffffbb;
+            padding: 1rem;
+            box-shadow: 0px 10px 12px rgba(0,0,0,0.2);
+            transition: all 0.5s ease-out;
+        }
+        .tabela-alunos:hover{
+            transform: translateY(-10px);
+            box-shadow: 0px 20px 12px rgba(62, 63, 71, 0.8);
+            scale: 1.03;
+        }
+        .tabela-alunos td, .tabela-alunos th{
+            padding: 0.1rem 2rem;  
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.2rem;
+        }
+        .tabela-alunos th{
+            border-bottom: solid 1px #000;
+            color: blue;
+        }
+        
+    </style>
+</body>
+</html>

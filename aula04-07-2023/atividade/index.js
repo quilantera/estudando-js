@@ -14,6 +14,7 @@ function MediaAritmética(num1,num2,num3){
   return((num1 + num2 + num3)/ 3);
 }
 
+
 function DivisivelPor3e5(num){
   return(( num % 5 === 0) && ( num % 3 === 0));
 }
