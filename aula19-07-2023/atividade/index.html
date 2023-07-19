@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade semáforo</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .semaforo{
+            width: 300px;
+            height: 500px;
+            background-color: rgb(27, 27, 39);
+            box-shadow: 10px 12px 20px rgba(46, 45, 45, 0.527);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .sinal-semaforo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+            border: 2px solid transparent;
+        }
+        #vermelho{
+            background-color: rgb(226, 34, 34);
+        }
+        #amarelo{
+            background-color: rgb(238, 225, 40);
+        }
+        #verde{
+            background-color: rgb(38, 245, 30);
+        }
+    </style>
+    <div class="semaforo">
+        <div class="sinal-semaforo" id="vermelho"></div>
+        <div class="sinal-semaforo" id="amarelo"></div>
+        <div class="sinal-semaforo" id="verde"></div>
+    </div>
+    <button id="acender-vermelho" > acender vermelho</button>
+    <button id="acender-amarelo" > acender amarelo</button>
+    <button id="acender-verde" > acender verde</button>
+    <button id="acender-todos" > acender todos</button>
+    <button id="apagar-todos" > parar</button>
+    <script src="script.js"></script>
+</body>
+</html>
